@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Pembelajaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Media Pembelajaran</h1>
+        <p>Platform interaktif untuk mendukung proses belajar</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#materi">Materi</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#materi"><i class="fas fa-book"></i> Materi</a></li>
+            <li><a href="#quiz"><i class="fas fa-question-circle"></i> Quiz</a></li>
+            <li><a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <h2>Selamat Datang!</h2>
+            <p>Website ini menyediakan materi belajar dan quiz interaktif untuk siswa.</p>
+        </section>
+
+        <!-- Materi Section -->
+        <section id="materi" class="section">
+            <h2>Materi Pembelajaran</h2>
+            <div class="materi-container">
+                <div class="materi">
+                    <h3>Matematika</h3>
+                    <p>Belajar dasar aljabar, geometri, dan trigonometri.</p>
+                </div>
+                <div class="materi">
+                    <h3>Fisika</h3>
+                    <p>Pahami hukum Newton, energi, dan gelombang.</p>
+                </div>
+                <div class="materi">
+                    <h3>Kimia</h3>
+                    <p>Mengenal tabel periodik, reaksi kimia, dan larutan.</p>
+                </div>
+            </div>
+            <div class="materi">
+                <h3>Matematika</h3>
+                <p id="matematika-short">Belajar dasar aljabar, geometri...</p>
+                <p id="matematika-full" style="display: none;">Belajar dasar aljabar, geometri, dan trigonometri. Materi lengkap tersedia untuk diunduh.</p>
+                <button onclick="toggleMateri('matematika')">Baca Selengkapnya</button>
+            </div>
+            
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="section">
+            <h2>Quiz Interaktif</h2>
+            <button id="startQuiz">Mulai Quiz</button>
+            <div id="quizArea" style="display: none;">
+               
+                <p>1. Pertanyaan: Apa ibu kota Indonesia?</p>
+                <button onclick="checkAnswer(true)">Jakarta</button>
+                <button onclick="checkAnswer(false)">Bandung</button>
+                <p id="quizFeedback"></p>
+
+                <p>2. Pertanyaan: Apa ibu kota provinsi aceh?</p>
+                <button onclick="checkAnswer(true)">Banda Aceh</button>
+                <button onclick="checkAnswer(false)">Lhokseumawe</button>
+                <p id="quizFeedback"></p>
+                
+                <p>3. Pertanyaan: dimana letak kota juang ?</p>
+                <button onclick="checkAnswer(true)">Kabupaten Bireuen</button>
+                <button onclick="checkAnswer(false)">Pidie jaya</button>
+                <p id="quizFeedback"></p>
+            
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="section">
+            <h2>Kontak Kami</h2>
+            <p>Email: mediapembelajaran universitasalmuslim.com</p>
+            <p>Telepon: +62 812 6961 0144</p>
+        </section>
+
+        <section id="home" class="section">
+            <h2>Selamat Datang!</h2>
+            <p>Website ini menyediakan materi belajar dan quiz interaktif untuk siswa.</p>
+            <div class="slider">
+                <img src="mediasi.png" alt="Slide 1">
+                <img src="images.jpg" alt="Slide 2">
+                <img src="images (1).jpg" alt="Slide 3">
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Media Pembelajaran. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
